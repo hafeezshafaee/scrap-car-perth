@@ -54,7 +54,9 @@ a {
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px
+    gap: 10px;
+    height: 100%;
+
 }
 
 .logo-mark {
@@ -109,6 +111,11 @@ a {
     color: #fff !important
 }
 
+.nav-cta:hover{
+    background: #dcff7a !important;
+    border-color: #102015 !important;
+    color: #102015 !important;
+}
 .menu-toggle {
     display: none;
     background: none;
@@ -162,12 +169,10 @@ a {
     z-index: 1;
 
     background-image:
-        linear-gradient(
-            90deg,
+        linear-gradient(90deg,
             rgba(5, 18, 14, 0.88) 0%,
             rgba(5, 18, 14, 0.68) 42%,
-            rgba(5, 18, 14, 0.28) 100%
-        ),
+            rgba(5, 18, 14, 0.28) 100%),
         var(--bg);
 
     background-size: cover;
@@ -209,7 +214,7 @@ a {
 
     margin-bottom: 8px;
 
-    color: rgba(255,255,255,.82);
+    color: rgba(255, 255, 255, .82);
 
     font-size: 11px;
     font-weight: 800;
@@ -239,7 +244,7 @@ a {
 
     margin: 0;
 
-    color: rgba(255,255,255,.78);
+    color: rgba(255, 255, 255, .78);
 
     font-size: 17px;
     line-height: 1.75;
@@ -278,16 +283,16 @@ a {
 .hero-slider .btn-outline {
     color: #fff;
 
-    border-color: rgba(255,255,255,.35);
+    border-color: rgba(255, 255, 255, .35);
 
-    background: rgba(255,255,255,.08);
+    background: rgba(255, 255, 255, .08);
 
     backdrop-filter: blur(8px);
 }
 
 .hero-slider .btn-outline:hover {
-    background: rgba(255,255,255,.16);
-    border-color: rgba(255,255,255,.65);
+    background: rgba(255, 255, 255, .16);
+    border-color: rgba(255, 255, 255, .65);
 }
 
 
@@ -316,7 +321,7 @@ a {
 
 /* Arrow buttons */
 
-.hero-slider .slider-controls > button {
+.hero-slider .slider-controls>button {
     width: 46px;
     height: 46px;
 
@@ -327,10 +332,10 @@ a {
 
     padding: 0;
 
-    border: 1px solid rgba(255,255,255,.35);
+    border: 1px solid rgba(255, 255, 255, .35);
     border-radius: 50%;
 
-    background: rgba(0,0,0,.28);
+    background: rgba(0, 0, 0, .28);
 
     color: #fff;
 
@@ -348,7 +353,7 @@ a {
         color .25s ease;
 }
 
-.hero-slider .slider-controls > button:hover {
+.hero-slider .slider-controls>button:hover {
     transform: scale(1.08);
 
     background: var(--lime);
@@ -358,7 +363,7 @@ a {
     color: var(--ink);
 }
 
-.hero-slider .slider-controls > button:active {
+.hero-slider .slider-controls>button:active {
     transform: scale(.94);
 }
 
@@ -385,7 +390,7 @@ a {
 
     border-radius: 999px !important;
 
-    background: rgba(255,255,255,.3) !important;
+    background: rgba(255, 255, 255, .3) !important;
 
     cursor: pointer;
 
@@ -398,7 +403,7 @@ a {
 }
 
 .hero-slider .dots .dot:hover {
-    background: rgba(255,255,255,.65) !important;
+    background: rgba(255, 255, 255, .65) !important;
 }
 
 .hero-slider .dots .dot.active {
@@ -415,7 +420,7 @@ a {
 .hero-slider .slide-count {
     margin-left: auto;
 
-    color: rgba(255,255,255,.6);
+    color: rgba(255, 255, 255, .6);
 
     font-size: 12px;
 
@@ -486,7 +491,7 @@ a {
         bottom: 22px;
     }
 
-    .hero-slider .slider-controls > button {
+    .hero-slider .slider-controls>button {
         width: 40px;
         height: 40px;
 
@@ -544,7 +549,7 @@ a {
 }
 
 .section {
-    padding: 110px 0
+    padding: 70px 0
 }
 
 .section.alt {
@@ -584,7 +589,8 @@ a {
     font-size: 11px;
     letter-spacing: .16em;
     font-weight: 900;
-    color: #7a8780
+    color: #7a8780;
+
 }
 
 .eyebrow.light {
@@ -707,39 +713,40 @@ a {
     line-height: 1.55
 }
 
-.donation-home {
+/* .donation-home {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 90px;
     align-items: center
 }
 
-.donation-art {
-    height: 420px;
+.donation-art  {
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
     border-radius: 30px;
     background: radial-gradient(circle at 50% 45%, rgba(201, 241, 90, .25), transparent 35%), linear-gradient(145deg, #10251e, #18352a);
-    position: relative;
-    overflow: hidden;
-    display: grid;
-    place-items: center
-}
+     position: relative;
+     overflow: hidden;
+ 
+} */
 
-.donation-art .heart,
-.heart-large {
-    font-size: 120px;
-    color: var(--lime);
-    text-shadow: 0 0 70px rgba(201, 241, 90, .25);
-    animation: pulse 2.8s ease-in-out infinite
-}
 
-.donation-art>span {
-    position: absolute;
-    bottom: 23px;
-    left: 23px;
-    color: rgba(255, 255, 255, .55);
-    font-size: 10px;
-    letter-spacing: .18em
-}
+
+
+    /* .donation-art, */
+    /* .donation-feature,
+    .map-faux {
+        min-height: 330px
+    }
+
+    .donations-image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; 
+         display: block
+    } */
+
 
 .faq-home {
     background: var(--soft)
@@ -976,7 +983,7 @@ summary {
     border-radius: 30px;
     background: radial-gradient(circle at 30% 30%, rgba(201, 241, 90, .2), transparent 35%), linear-gradient(145deg, #17382b, #0c1712);
     color: #fff;
-    padding: 46px;
+    /* padding: 46px; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -1436,17 +1443,6 @@ summary {
         padding: 11px 0
     }
 
-    .donation-art,
-    .donation-feature,
-    .map-faux {
-        min-height: 330px
-    }
-    .donations-image {
-height: 100%;
-width: 100%;
-object-fit: cover;
-display: block;
-    }
 
     .section {
         padding: 82px 0
@@ -1522,7 +1518,7 @@ display: block;
 }
 
 /* Slider arrow controls */
-.hero-slider .slider-controls > button {
+.hero-slider .slider-controls>button {
     width: 46px !important;
     height: 46px !important;
     min-width: 46px !important;
@@ -1547,6 +1543,52 @@ display: block;
 }
 
 /* Make the arrow itself perfectly centered */
-.hero-slider .slider-controls > button::first-letter {
+.hero-slider .slider-controls>button::first-letter {
     line-height: 1;
+}
+.submit-btn{
+    background: #dcff7a;
+    border-color: #dcff7a;
+    color: #102015;
+    border-radius: 999px;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.submit-btn:hover{
+    background: #b8e842;
+    border-color: #b8e842;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.donation-home {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.donation-art,
+.donation-home > div {
+    flex: 1;
+}
+
+.donation-art img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional rounded corners */
+    display: block;
+}
+
+/* Responsive adjustment for mobile screens */
+@media (max-width: 768px) {
+    .donation-home {
+        flex-direction: column;
+    }
 }

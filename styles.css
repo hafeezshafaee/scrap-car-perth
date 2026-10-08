@@ -592,7 +592,7 @@ a {
 .about-layout h2,
 .donation-copy h2 {
     font: 800 clamp(36px, 4vw, 55px)/1.05 Manrope;
-    margin: 15px 0
+    /* margin: 15px 0 */
 }
 
 .section-head p,
@@ -1628,4 +1628,69 @@ summary {
 .page-hero h1 em {
     font-style: normal;
     color: var(--primary-color, #c9f15a); /* Adjust to your brand accent color */
+}
+/* =========================================================
+   DONATION STORY SECTION FIX
+========================================================= */
+
+.donation-feature {
+    min-height: 500px;
+    border-radius: 30px;
+    background: radial-gradient(circle at 30% 30%, rgba(201, 241, 90, .2), transparent 35%), linear-gradient(145deg, #17382b, #0c1712);
+    color: #fff;
+    padding: 46px; /* <-- UNCOMMENTED so content doesn't hit the edges */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes image to top, text to bottom */
+    overflow: hidden;
+}
+
+/* Constrains the image so it doesn't break the layout */
+/* .heart-large {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.heart-large img {
+    width: 100%;
+    max-width: 320px; /* Adjust this to make the image bigger/smaller 
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+.donation-feature span {
+    color: var(--lime);
+    font-size: 11px;
+    letter-spacing: .16em;
+    font-weight: 900;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.donation-feature h2 {
+    font: 800 36px/1.1 Manrope, sans-serif;
+    max-width: 520px;
+    margin: 0;
+}
+
+.donation-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0;
+} */
+
+.donation-copy p {
+    margin-bottom: 20px;
+}
+
+.donation-copy p:last-child {
+    margin-bottom: 0;
+} */
+.donation-image {
+    width: 50%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
 }

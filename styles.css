@@ -121,18 +121,21 @@ a {
     color: var(--ink)
 }
 
-.nav-cta {
+/* .nav-cta {
     padding: 12px 17px;
     border-radius: 999px;
     background: var(--ink) !important;
-    color: #fff !important
+    color: #102015 !important;
+    background: #dcff7a !important;
+    border-color: #dcff7a !important;
 }
 
 .nav-cta:hover{
     background: #dcff7a !important;
-    border-color: #102015 !important;
-    color: #102015 !important;
-}
+    background: #102015 !important;
+    color: #dcff7a !important;
+} */
+
 .menu-toggle {
     display: none;
     background: none;
@@ -1608,4 +1611,21 @@ summary {
     .donation-home {
         flex-direction: column;
     }
+}
+.page-hero {
+    /* Pulls the inline background variable and adds a dark overlay for text readability */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), var(--bg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Adjust padding to match your slider height */
+    padding: 200px 0; 
+    color: #fff;
+}
+
+/* Ensure the typography matches the home page */
+.page-hero h1 em {
+    font-style: normal;
+    color: var(--primary-color, #c9f15a); /* Adjust to your brand accent color */
 }
